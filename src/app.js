@@ -6,6 +6,7 @@ const handlebars = require("express-handlebars");
 
 const express = require("express");
 const app = express();
+const port = process.env.PORT || 3000;
 
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates");
@@ -102,6 +103,6 @@ app.get("*", (req, res) => {
   res.send("No page found");
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(" Server started on port 3000");
 });

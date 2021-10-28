@@ -3,7 +3,7 @@ const forecast = (latitude, longitude, callback) => {
   //   const url = `http://api.weatherstack.com/current?access_key=f5d797723195e2075cc37c9fe83b9c45&query=${address}`;
   // const url = `http://api.weatherstack.com/current?access_key=f5d797723195e2075cc37c9fe83b9c45&query=${address.latitude},${address.longitude}`;
   const url = `http://api.weatherstack.com/current?access_key=f5d797723195e2075cc37c9fe83b9c45&query=${latitude},${longitude}`;
-  console.log("dfdsfd "+url);
+  console.log("dfdsfd0000000000000000000000000000000000000 "+url);
   request(url, { json: true }, (error, { body }) => {
     if (error) {
       callback("Unable to connect to weather service", undefined);
